@@ -15,14 +15,14 @@ function App() {
 
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); 
+    }, 2000);
 
     // Cleanup timer
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
-    return <Loading />; 
+    return <Loading />;
   }
 
 
