@@ -36,7 +36,7 @@ const AdminLogin = () => {
             }
 
             alert("Admin Login successful!")
-            navigate("/dashboard")
+            navigate("/dashboard")  
 
         } catch (error) {
             setMessage("Please provide a valid email and password") 
