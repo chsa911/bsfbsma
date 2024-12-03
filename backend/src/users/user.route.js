@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 const router =  express.Router();
 
-const JWT_SECRET = process.env.JWT_SECRET_KEY
+const JWT_SECRET = 'aab';/*process.env.JWT_SECRET*/
 
 router.post("/admin", async (req, res) => {
     const {username, password} = req.body;
